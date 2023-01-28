@@ -31,11 +31,11 @@ console.log('I have',pets,'pets at home. :(');
 let friendsPets = 1;
 console.log('My friend Jorgen has',friendsPets,'dog at home.');
 // 11 - Add two pets to your `pets` variable
-pets = pets + 2;
+pets += 2;
 console.log('I decided to adopt',pets,'cats, per Prime\'s instructions.');
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets = 1
-console.log('I am only allowed to have',allowedPets,'animal at home.')
+let allowedPets = 1;
+console.log('I am only allowed to have', allowedPets, 'animal at home.');
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
 if (adventurous === true) {
@@ -87,8 +87,8 @@ else {
     console.log('Oh no, I have too many pets!');
 }
 
-pets = 1
-allowedPets = 2
+pets -= 1;
+allowedPets = 2;
 
 if (pets < allowedPets) {
     console.log('I can have more pets!');
@@ -100,7 +100,7 @@ else {
     console.log('Oh no, I have too many pets!');
 }
 
-pets = 2 
+pets = 2; 
 
 if (pets < allowedPets) {
     console.log('I can have more pets!');
