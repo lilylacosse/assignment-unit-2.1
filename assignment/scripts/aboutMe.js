@@ -119,13 +119,67 @@ else {
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+let mostPets; 
+ 
+if (pets > friendsPets) {
+    mostPets = pets; 
+    console.log('Most pets: ' + mostPets);
+}
+else if (friendsPets > pets) {
+    mostPets = friendsPets; 
+    console.log('Most pets: ' + mostPets);
+}
+else {
+    mostPets = pets;
+    console.log('Most pets: ' + mostPets);
+}
+
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+switch (luckyNumber) {
+    case 1:
+        console.log('First is the worst');
+        break; 
+    case 2:
+        console.log('Second is the best');
+        break;
+    case 3:
+        console.log('Third is the one in the polka dot dress');
+        break;
+    default:
+        console.log('Luck is what happens when preparation meets opportunity');
+}
 
+luckyNumber = 11; 
+
+switch (luckyNumber) {
+    case 1:
+        console.log('First is the worst');
+        break; 
+    case 2:
+        console.log('Second is the best');
+        break;
+    case 3:
+        console.log('Third is the one in the polka dot dress');
+        break;
+    default:
+        console.log('Luck is what happens when preparation meets opportunity');
+}
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+let message; 
 
+(adventurous === true) ? (message = 'Adventures are great!') : (message = 'How about we stay home?');
+
+console.log(message); 
+
+adventurous = false; 
+
+(adventurous === true) ? (message = 'Adventures are great!') : (message = 'How about we stay home?');
+
+console.log(message); 
 
